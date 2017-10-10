@@ -2,5 +2,5 @@ pipeline:
 　　build:
 　　image: node:6.10.0
 　　commands:
-　　- yarn install
-　　- yarn test
+　　  - yarn install
+　　  - yarn test
