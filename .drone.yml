@@ -1,6 +1,4 @@
-pipeline:
-build:
-  image: node:6.10.0
-  commands:
-  -yarn install
-  -yarn test
+image: python
+script:
+- python helloworld.py
+- echo"Build has been completed."
