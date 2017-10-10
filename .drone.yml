@@ -1,9 +1,4 @@
-pipeline:
-  docker:
-    # registry: {}              # 私有registry地址
-    # auth: {}                  # auth_token
-    image: ubuntu
-    repo: scloud_service # 修改为你对应的repo名字
-    tags: latest                # tags
-    
+image: dockerfile/nginx
+script:
+- echo hello world
     
