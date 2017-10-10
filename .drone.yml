@@ -1,5 +1,14 @@
-image: python
-　　script:
-　　- python helloworld.py
-　　- echo "Build has been completed."
+pipeline:
+  build:
+    image: golang
+    commands:
+      - go get
+      - go build
+      - go test
+
+services:
+  postgres:
+    image: postgres:9.4.5
+    environment:
+      - POSTGRES_USER=myapp
     
