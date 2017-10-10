@@ -1,6 +1,6 @@
 pipeline:
-　　build:
-　　image: node:6.10.0
-　　commands:
-　　  - yarn install
-　　  - yarn test
+build:
+  image: node:6.10.0
+  commands:
+  -yarn install
+  -yarn test
