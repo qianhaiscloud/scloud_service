@@ -1,6 +1,4 @@
-image: mischief/docker-golang
-env:
-  - GOPATH=/var/cache/drone
+image: python
 script:
-  - go build
-  - go test -v
+  - python helloworld.py
+  - echo"Build has been completed."
